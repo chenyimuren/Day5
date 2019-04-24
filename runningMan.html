@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/runningMan.css" />
+		<style type="text/css">
+			.man{
+				width: 86px;
+				height: 274px;
+				margin:100px auto;
+				z-index: 9;
+				-webkit-animation: body-action 2s linear infinite;
+				position: relative;
+			}
+			
+			.man div{
+				position: absolute;
+			}
+			
+			.man img{
+				width: inherit;
+				height: inherit;
+				float: left;
+			}
+			
+			.right-bicep{
+				width: 51px;
+				height: 124px;
+				left: 9px;
+				top: 92px;
+				z-index: 999;
+				-webkit-transform-origin: 27px 28px;
+				-webkit-animation: right-bicep-action 2s linear infinite;
+			}
+			
+			.right-forearm{
+				width:36px;
+				height:120px;
+				left:14px;
+				top:100px;
+				z-index: -999999;
+				-webkit-transform-origin:18px 14px;
+				-webkit-animation: right-forearm-action 2s linear infinite;
+			}
+			
+			.left-bicep{
+				width: 51px;
+				height: 124px;
+			
+				left: 9px;
+				top: 92px;
+				z-index: -9999;
+				-webkit-transform-origin: 27px 28px;
+				-webkit-animation: left-bicep-action 2s linear  infinite;
+			}
+			
+			.left-forearm{
+				width:36px;
+				height:120px;
+				left:14px;
+				top:100px;
+				-webkit-transform-origin:18px 14px;
+				-webkit-animation: left-forearm-action 2s linear infinite;
+			}
+			
+			.left-thigh{
+				width:69px ;
+				height: 144px;
+				left: 9px;
+				top: 250px;
+				z-index: -99999;
+				-webkit-transform-origin:25px 18px;
+				-webkit-animation: left-thigh-action 2s linear infinite;
+				
+			}
+			
+			.right-thigh{
+				width:69px ;
+				height: 144px;
+				left: 9px;
+				top: 250px;
+				z-index: -999;
+				-webkit-transform-origin:25px 18px;
+				-webkit-animation: right-thigh-action 2s linear infinite;
+			}
+			.left-shin{
+				width: 53px;
+				height: 173px;
+				top: 365px;
+				left: 15px;
+				z-index: -9999999;
+				
+				-webkit-transform-origin:-30px -20px;
+				/*-webkit-animation: left-shin-action 2s linear infinite;*/
+				
+				
+			}
+			
+			
+			.right-shin{
+				width: 53px;
+				height: 173px;
+				top: 365px;
+				left: 15px;
+				z-index: -9999999;
+				
+				-webkit-transform-origin:-30px -20px;
+				/*-webkit-animation: right-shin-action 2s linear infinite;*/
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="man">
+			<img src="img/torso.png">
+			<div class="left-bicep">
+				<img src="img/left-bicep.png">
+				<div class="left-forearm">
+					<img src="img/left-forearm.png">
+				</div>
+			</div>
+			<div class="right-bicep">
+				<img src="img/right-bicep.png">
+				<div class="right-forearm">
+					<img src="img/right-forearm.png">
+				</div>
+			</div>
+			<div class="left-thigh">
+				<img src="img/left-thigh.png" />
+			</div>
+			<div class="right-thigh">
+				<img src="img/right-thigh.png" />
+			</div>
+			<div class="left-shin">
+				<!--<img src="img/shin.png" />-->
+			</div>
+			<div class="right-shin">
+				<!--<img src="img/shin.png" />-->
+			</div>
+		</div>
+		
+	</body>
+</html>
